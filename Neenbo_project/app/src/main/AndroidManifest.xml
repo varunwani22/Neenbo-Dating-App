@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Neenbo_Project">
-        <activity android:name=".TermsOfUse"></activity>
-        <activity android:name=".Filter" />
-        <activity android:name=".Finish" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Received_messages"></activity>
+        <activity android:name=".LikeYou" />
+        <activity android:name=".Encounter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TermsOfUse" />
+        <activity android:name=".Filter" />
+        <activity android:name=".Finish" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

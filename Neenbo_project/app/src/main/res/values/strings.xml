@@ -31,5 +31,14 @@
     <string name="text_save">Save</string>
     <string name="text_encounters">Encounters</string>
     <string name="text_i_accept_the_terms">I accept the terms</string>
+    <string name="encounter">Encounters</string>
+    <string name="ravi_solanki_21">Ravi Solanki ,21</string>
+    <string name="maharashtra_india">Maharashtra, India</string>
+    <string name="liked_you">Liked you</string>
+    <string name="preminum_like">PREMINUM LIKE</string>
+    <string name="like_you">LIKE YOU</string>
+    <string name="received_messages">Received messages</string>
+    <string name="neenbo">Neenbo</string>
+    <string name="message_of_neenbo_id">You earned 15 points per daily con..</string>
 
 </resources>
