@@ -31,5 +31,15 @@
     <string name="text_save">Save</string>
     <string name="text_encounters">Encounters</string>
     <string name="text_i_accept_the_terms">I accept the terms</string>
+    <string name="peopleNearby">People nearby</string>
+    <string name="addMe">Add me</string>
+    <string name="lisa">Lisa, 29</string>
+    <string name="julie">Julie, 28</string>
+    <string name="selena">Selena, 24</string>
+    <string name="Salman">Salman, 53</string>
+    <string name="virat">Virat, 35</string>
+    <string name="mark">Mark, 39</string>
+    <string name="mumbai">Mumbai, Maharastra</string>
+
 
 </resources>
