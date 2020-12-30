@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsOfUse">
+
+    <Button
+        android:id="@+id/btnIAcceptTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:background="@drawable/accept_rectangle_bg"
+        android:paddingStart="@dimen/dp_50"
+        android:paddingEnd="@dimen/dp_50"
+        android:text="@string/text_i_accept_the_terms"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   <TextView
+       android:id="@+id/tvTermsOfUseOfTermsOfUseActivity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="@string/Text_Terms_Of_Use"
+       android:textSize="@dimen/sp_15"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       app:layout_constraintTop_toTopOf="@id/btnIAcceptTerms"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="2dp"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTermsOfUseOfTermsOfUseActivity" />
+
+    <TextView
+        android:id="@+id/tvPrivacyPolicyOfTermsOfUseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Text_privacy_policy"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTermsOfUseOfTermsOfUseActivity" />
+
+    <TextView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicyOfTermsOfUseActivity" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_500"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_i_accept_terms" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

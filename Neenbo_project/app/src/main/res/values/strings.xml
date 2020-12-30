@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Neenbo_Project</string>
+    <string name="Text_neenbo">NEENBO</string>
+    <string name="text_accept">i accept the terms</string>
+    <string name="text_DonotPost">We don\'t post anything on Facebook</string>
+    <string name="Text_Terms_Of_Use">When you register, you agree to our Term of use</string>
+    <string name="Text_privacy_policy">and Privacy Policy</string>
+    <string name="Text_google">Login with Google</string>
+    <string name="Text_email">Login with Email</string>
+    <string name="Text_sms">Login with SMS</string>
+    <string name="Text_facebook">Login with Facebook</string>
+    <string name="Text_finish">Finish</string>
+    <string name="text_enter_email">Enter Email</string>
+    <string name="Text_enter_your_email">Enter your Email</string>
+    <string name="text_firstname">FirstName</string>
+    <string name="text_inform_gender">Inform Your gender</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_date_of_birth">Date of birth</string>
+    <string name="text_day">Day</string>
+    <string name="text_month">Month</string>
+    <string name="text_year">Year</string>
+    <string name="Text_filter">Filter</string>
+    <string name="text_show_me">Show me</string>
+    <string name="text_men_or_women">Men or Women</string>
+    <string name="text_city_state">City,State</string>
+    <string name="text_18">18</string>
+    <string name="text_to">to</string>
+    <string name="text_35">35</string>
+    <string name="text_Within">Within 50 km</string>
+    <string name="text_50_km">50 Km</string>
+    <string name="text_save">Save</string>
+    <string name="text_encounters">Encounters</string>
+    <string name="text_i_accept_the_terms">I accept the terms</string>
+
+</resources>
