@@ -21,6 +21,7 @@ public class TermsOfUse extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TermsOfUse.this,Finish.class);
+                startActivity(intent);
             }
         });
 
