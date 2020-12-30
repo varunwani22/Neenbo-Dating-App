@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Neenbo_Project">
         <activity android:name=".PeopleNearby">
+        <activity android:name=".profile"></activity>
+        <activity android:name=".TermsOfUse" />
+        <activity android:name=".Filter" />
+        <activity android:name=".Finish" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
