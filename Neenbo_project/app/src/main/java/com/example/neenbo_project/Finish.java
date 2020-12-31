@@ -40,7 +40,7 @@ public class Finish extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (validation()){
-            Intent intent = new Intent();
+            Intent intent = new Intent(Finish.this,Filter.class);
             startActivity(intent);
         }
     }

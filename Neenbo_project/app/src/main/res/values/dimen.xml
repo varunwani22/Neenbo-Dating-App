@@ -18,7 +18,6 @@
     <dimen name="dp_2">2dp</dimen>
     <dimen name="dp_70">70dp</dimen>
     <dimen name="dp_30">30dp</dimen>
-    <dimen name="sp_15">15sp</dimen>
     <dimen name="dp_250">250dp</dimen>
     <dimen name="sp_25">25sp</dimen>
     <dimen name="dp_330">330dp</dimen>
