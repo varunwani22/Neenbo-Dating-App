@@ -34,7 +34,13 @@ public class Finish extends AppCompatActivity implements View.OnClickListener {
         mEtYear = findViewById(R.id.et35);
         nBtnEncounters = findViewById(R.id.btnSave);
 
-        nBtnEncounters.setOnClickListener(this);
+        nBtnEncounters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Finish.this,Encounter.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
