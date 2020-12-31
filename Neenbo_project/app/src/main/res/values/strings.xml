@@ -35,11 +35,19 @@
     <string name="addMe">Add me</string>
     <string name="lisa">Lisa, 29</string>
     <string name="julie">Julie, 28</string>
+    <string name="myAccount">My Account</string>
     <string name="selena">Selena, 24</string>
     <string name="Salman">Salman, 53</string>
     <string name="virat">Virat, 35</string>
     <string name="mark">Mark, 39</string>
     <string name="mumbai">Mumbai, Maharastra</string>
+    <string name="name_of_user">Name of User</string>
+    <string name="chat">Chat</string>
+    <string name="group">Group</string>
+    <string name="freePoints">Free Points</string>
+    <string name="popular_of_week">Popular of the week</string>
+    <string name="premium">Start yours free trail of Neenbo Premium now</string>
+
 
     <string name="text_i_accept_terms">1. Acceptance of Terms of Use Agreement.
 
