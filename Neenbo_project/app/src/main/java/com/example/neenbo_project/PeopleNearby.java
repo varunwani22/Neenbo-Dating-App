@@ -33,7 +33,7 @@ public class PeopleNearby extends AppCompatActivity {
         mbtlikeyou = findViewById(R.id.click_likeyou);
         mbtmessage = findViewById(R.id.click_messages);
         mbtaccount = findViewById(R.id.click_account);
-        mbtfilter= findViewById(R.id.click_filter);
+        mbtfilter= findViewById(R.id.click_filterLocation);
     }
     private void onclick_for_navigation() {
         mbtlikeyou.setOnClickListener(new View.OnClickListener() {

@@ -12,7 +12,7 @@ public class Filter extends AppCompatActivity implements View.OnClickListener {
 
     private EditText mEtManOrWomen;
     private EditText mEtCityAndState;
-    private EditText mEtRdius;
+    private EditText mEtRadius;
     private Button mBtnSave;
     private Button mBtnArrowOfFilter;
 
@@ -27,8 +27,9 @@ public class Filter extends AppCompatActivity implements View.OnClickListener {
     private void initializeViewsAndListener() {
         mEtManOrWomen = findViewById(R.id.etManOrWomen);
         mEtCityAndState = findViewById(R.id.etCityAndState);
-        mEtRdius = findViewById(R.id.etRadius);
+        mEtRadius = findViewById(R.id.etRadius);
         mBtnSave = findViewById(R.id.btnSave);
+        mBtnArrowOfFilter = findViewById(R.id.btnBackArrow_Of_FilterActivity);
 
         mBtnSave.setOnClickListener(this);
 

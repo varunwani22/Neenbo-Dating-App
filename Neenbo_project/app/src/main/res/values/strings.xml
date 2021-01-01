@@ -248,8 +248,13 @@
         Agreement and you may not make any representations on behalf of or bind Neenbo in any manner.
     </string>
     <string name="text_mumbai_maharastra">Mumbai, Maharastra</string>
-    <string name="text_favorite">favorite</string>
+    <string name="text_favorite">Favorite</string>
     <string name="text_add">Add</string>
-    <string name="text_follow">follow</string>
+    <string name="text_follow">Follow</string>
+    <string name="lisawithoutage">lisa</string>
+    <string name="juliewithoutage">juliewithoutage</string>
+    <string name="julewithout">julie</string>
+    <string name="text_salman">salman</string>
+    <string name="text_selena">selena</string>
 
 </resources>

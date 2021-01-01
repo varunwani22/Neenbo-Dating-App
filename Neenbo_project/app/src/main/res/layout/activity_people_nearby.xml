@@ -26,13 +26,13 @@
             android:textSize="@dimen/sp_20" />
 
         <TextView
-            android:clickable="true"
-            android:id="@+id/click_filter"
+            android:id="@+id/click_filterLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|end"
             android:layout_margin="@dimen/dp_20"
-            android:background="@drawable/ic_setting" />
+            android:background="@drawable/ic_setting"
+            android:clickable="true" />
     </androidx.cardview.widget.CardView>
 
 

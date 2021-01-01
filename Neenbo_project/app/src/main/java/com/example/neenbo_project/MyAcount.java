@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MyAcount extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MyAcount extends AppCompatActivity {
     private TextView mbtmessage;
     private TextView mbtencounter;
     private ImageButton mbtfilter;
+    private ImageView mbtProfileAccount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +29,21 @@ public class MyAcount extends AppCompatActivity {
         mbtlikeyou = findViewById(R.id.click_likeyou);
         mbtmessage = findViewById(R.id.click_messages);
         mbtfilter=findViewById(R.id.userLocation);
+        mbtProfileAccount = findViewById(R.id.profileButton);
+
     }
     private void onclick_for_navigation() {
+
+        mbtProfileAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MyAcount.this, profile.class);
+                startActivity(intent);
+
+            }
+        });
+
+
         mbtfilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

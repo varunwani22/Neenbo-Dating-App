@@ -18,7 +18,6 @@ public class TermsOfUse extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terms_of_use);
         mBtnIAcceptTerms = findViewById(R.id.btnIAcceptTerms);
-        mCbIAccept = findViewById(R.id.cbIaccept);
         mBtnIAcceptTerms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
