@@ -44,12 +44,12 @@
     <string name="name_of_user">Name of User</string>
     <string name="chat">Chat</string>
     <string name="group">Group</string>
+    <string name="i_have_read">I have read all terms and condition.</string>
     <string name="freePoints">Free Points</string>
     <string name="popular_of_week">Popular of the week</string>
     <string name="premium">Start yours free trail of Neenbo Premium now</string>
-
-
-    <string name="text_i_accept_terms">1. Acceptance of Terms of Use Agreement.
+    <string name="termConditionTop">Terms And Condition</string>
+    <string name="termAndCondition">>1. Acceptance of Terms of Use Agreement.
 
         By creating a Tinder account, whether through a mobile device, mobile application or
         computer (collectively, the Service) you agree to be bound by (i) these Terms of Use,
@@ -236,7 +236,5 @@
         You agree that your Tinder account is non-transferable and all of your rights to your
         account and its Content terminate upon your death. No agency, partnership, joint venture,
         fiduciary or other special relationship or employment is created as a result of this
-        Agreement and you may not make any representations on behalf of or bind Neenbo in any manner.
-    </string>
-
+        Agreement and you may not make any representations on behalf of or bind Neenbo in any manner.</string>
 </resources>
