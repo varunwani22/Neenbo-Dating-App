@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Neenbo_Project</string>
+    <string name="app_name">Neenbo</string>
     <string name="Text_neenbo">NEENBO</string>
     <string name="text_accept">i accept the terms</string>
     <string name="text_DonotPost">We don\'t post anything on Facebook</string>
