@@ -171,10 +171,12 @@
 
                     <TextView
                         android:id="@+id/tvjulie"
+                        android:drawableEnd="@drawable/ic_oniledot"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/julie"
                         android:paddingStart="@dimen/dp_10"
+                        android:drawablePadding="@dimen/dp_10"
                         app:layout_constraintStart_toStartOf="@id/julie"
                         app:layout_constraintTop_toBottomOf="@id/julie"
                         android:textSize="@dimen/sp_20"
@@ -377,7 +379,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
-                android:background="@drawable/ic_locationclip" />
+                android:background="@drawable/ic_locationorange" />
 
             <TextView
                 android:clickable="true"
@@ -385,7 +387,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
-                android:background="@drawable/ic_cardclip" />
+                android:background="@drawable/ic_cardclip_plan" />
 
             <TextView
                 android:clickable="true"

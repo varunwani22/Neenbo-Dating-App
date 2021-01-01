@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
-                android:background="@drawable/ic_cardclip" />
+                android:background="@drawable/ic_cardclip_plan" />
 
             <TextView
                 android:id="@+id/click_likeyou"

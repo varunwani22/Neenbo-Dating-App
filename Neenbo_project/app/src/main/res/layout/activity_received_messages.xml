@@ -93,36 +93,49 @@
         app:layout_constraintBottom_toTopOf="@id/tvline"
         app:layout_constraintLeft_toLeftOf="parent" />
 
-    <ImageView
-        android:id="@+id/ivID"
-        android:layout_width="@dimen/dp_80"
-        android:layout_height="@dimen/dp_80"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="@dimen/dp_15"
-        android:src="@drawable/circle_cropped"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvline" />
-    <TextView
-        android:id="@+id/tvidname"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/dp_05"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/neenbo"
+        android:elevation="@dimen/dp_20"
         app:layout_constraintTop_toBottomOf="@id/tvline"
-        app:layout_constraintLeft_toRightOf="@id/ivID"
-        android:layout_marginTop="@dimen/dp_20"
-        android:textColor="@color/black"
-        android:textSize="@dimen/sp_20"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:drawableEnd="@drawable/ic_baseline_check_circle_outline_24"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvidname"
-        app:layout_constraintLeft_toRightOf="@id/ivID"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:layout_marginTop="@dimen/dp_10"
-        android:text="@string/message_of_neenbo_id"
-        android:textSize="@dimen/sp_19"/>
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:id="@+id/ivID"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dp_15"
+            android:src="@drawable/circle_cropped"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvline" />
+        <TextView
+            android:id="@+id/tvidname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/neenbo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ivID"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:drawableEnd="@drawable/ic_baseline_check_circle_outline_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvidname"
+            app:layout_constraintLeft_toRightOf="@id/ivID"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/message_of_neenbo_id"
+            android:textSize="@dimen/sp_18"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
