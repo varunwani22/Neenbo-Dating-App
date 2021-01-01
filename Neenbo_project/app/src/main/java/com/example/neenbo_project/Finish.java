@@ -45,8 +45,9 @@ public class Finish extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (validation()){
-            Intent intent = new Intent(Finish.this,Filter.class);
+        if (validation()) {
+            Intent intent = new Intent(Finish.this, profile.class);
+            intent.putExtra("data",mEtName.getText().toString());
             startActivity(intent);
         }
     }

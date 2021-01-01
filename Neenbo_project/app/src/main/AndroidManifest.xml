@@ -13,13 +13,11 @@
         <activity android:name=".messages"/>
         <activity android:name=".LikeYou" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".PeopleNearby" />
+        <activity android:name=".salman"/>
+        <activity android:name=".selena" />
+        <activity android:name=".julie" />
+        <activity android:name=".lisa" />
+        <activity android:name=".PeopleNearby"/>
         <activity android:name=".profile" />
         <activity android:name=".TermsOfUse" />
         <activity android:name=".Filter" />

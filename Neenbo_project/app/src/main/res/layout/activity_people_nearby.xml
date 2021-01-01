@@ -126,6 +126,7 @@
                         android:id="@+id/lisa1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:clickable="true"
                         android:paddingTop="@dimen/dp_10"
                         android:paddingLeft="@dimen/dp_10"
                         android:paddingRight="@dimen/dp_10"
@@ -134,7 +135,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/tvlisa"
+                        android:id="@+id/tvlisaOfLisaActivity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/lisa"
@@ -152,8 +153,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mumbai"
                         android:paddingStart="@dimen/dp_10"
-                        app:layout_constraintStart_toStartOf="@id/tvlisa"
-                        app:layout_constraintTop_toBottomOf="@id/tvlisa"
+                        app:layout_constraintStart_toStartOf="@id/tvlisaOfLisaActivity"
+                        app:layout_constraintTop_toBottomOf="@id/tvlisaOfLisaActivity"
                         android:textSize="@dimen/sp_15"
                         android:textColor="@color/black"
                         />
@@ -161,6 +162,7 @@
                     <ImageView
                         android:id="@+id/julie"
                         android:layout_width="wrap_content"
+                        android:clickable="true"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/dp_10"
                         android:paddingLeft="@dimen/dp_10"
@@ -206,6 +208,7 @@
                     <ImageView
                         android:id="@+id/selena"
                         android:layout_width="wrap_content"
+                        android:clickable="true"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/dp_10"
                         android:paddingLeft="@dimen/dp_10"
@@ -241,6 +244,7 @@
 
                     <ImageView
                         android:id="@+id/salman"
+                        android:clickable="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/dp_10"

@@ -78,8 +78,8 @@
         android:layout_height="wrap_content"
         android:text="@string/Text_privacy_policy"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTermsOfUseOfTermsOfUseActivity" />
@@ -94,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicyOfTermsOfUseActivity" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView"
         android:layout_width="wrap_content"
         android:layout_height="473dp"
         android:background="@drawable/boxterm_condition"
@@ -120,6 +120,6 @@
         android:text="@string/i_have_read"
         app:layout_constraintBottom_toTopOf="@+id/btnIAcceptTerms"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
