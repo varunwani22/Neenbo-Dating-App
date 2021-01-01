@@ -15,6 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/dp_20"
@@ -25,8 +26,8 @@
             android:textSize="@dimen/sp_20" />
 
         <TextView
-            android:id="@+id/textView4"
             android:clickable="true"
+            android:id="@+id/click_filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|end"
@@ -371,30 +372,40 @@
             android:weightSum="5">
 
             <TextView
+                android:clickable="true"
+                android:id="@+id/click_peopleNearby"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
                 android:background="@drawable/ic_locationclip" />
 
             <TextView
+                android:clickable="true"
+                android:id="@+id/click_encounter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
                 android:background="@drawable/ic_cardclip" />
 
             <TextView
+                android:clickable="true"
+                android:id="@+id/click_likeyou"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
                 android:background="@drawable/ic_heartclip" />
 
             <TextView
+                android:id="@+id/click_messages"
+                android:clickable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"
                 android:background="@drawable/ic_message" />
 
             <TextView
+                android:id="@+id/click_account"
+                android:clickable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_20"

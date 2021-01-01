@@ -7,60 +7,53 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class PeopleNearby extends AppCompatActivity {
+public class LikeYou extends AppCompatActivity {
     private TextView mbtmessage;
-    private TextView mbtlikeyou;
+    private TextView mbtlocation;
     private TextView mbtaccount;
     private TextView mbtencounter;
-    private TextView mbtfilter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_people_nearby);
-   bottom_navigation();
-   onclick_for_navigation();
+        setContentView(R.layout.activity_like_you);
+        bottom_navigation();
+        onclick_for_navigation();
     }
 
     private void bottom_navigation() {
         mbtencounter = findViewById(R.id.click_encounter);
-        mbtlikeyou = findViewById(R.id.click_likeyou);
+        mbtlocation = findViewById(R.id.click_peopleNearby);
         mbtmessage = findViewById(R.id.click_messages);
         mbtaccount = findViewById(R.id.click_account);
-        mbtfilter= findViewById(R.id.click_filter);
     }
+
     private void onclick_for_navigation() {
-        mbtlikeyou.setOnClickListener(new View.OnClickListener() {
+        mbtlocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PeopleNearby.this, LikeYou.class);
+                Intent intent = new Intent(LikeYou.this, PeopleNearby.class);
                 startActivity(intent);
             }
         });
         mbtmessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PeopleNearby.this, messages.class);
+                Intent intent = new Intent(LikeYou.this, messages.class);
                 startActivity(intent);
             }
         });
         mbtaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PeopleNearby.this, MyAcount.class);
+                Intent intent = new Intent(LikeYou.this, MyAcount.class);
                 startActivity(intent);
             }
         });
         mbtencounter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PeopleNearby.this, Encounter.class);
-                startActivity(intent);
-            }
-        });
-        mbtfilter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PeopleNearby.this, Filter.class);
+                Intent intent = new Intent(LikeYou.this, Encounter.class);
                 startActivity(intent);
             }
         });
