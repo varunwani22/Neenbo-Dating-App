@@ -95,17 +95,17 @@
 
 
             <ImageView
-                android:clickable="true"
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_30"
                 android:layout_marginTop="28dp"
-                android:src="@drawable/ic_profileuser"
-                android:padding="@dimen/dp_05"
                 android:background="@drawable/profilecircle"
+                android:clickable="true"
+                android:padding="@dimen/dp_05"
+                android:src="@drawable/ic_profileuser"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintHorizontal_bias="0.553"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

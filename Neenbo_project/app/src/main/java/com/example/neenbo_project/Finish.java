@@ -16,7 +16,8 @@ public class Finish extends AppCompatActivity implements View.OnClickListener {
     private EditText mEtDay;
     private EditText mEtMonth;
     private EditText mEtYear;
-    private Button nBtnEncounters;
+    private Button mBtnEncounters;
+    private Button mBtnArrowOfFinish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +33,24 @@ public class Finish extends AppCompatActivity implements View.OnClickListener {
         mEtDay = findViewById(R.id.et18);
         mEtMonth = findViewById(R.id.etTo);
         mEtYear = findViewById(R.id.et35);
-        nBtnEncounters = findViewById(R.id.btnSave);
+        mBtnEncounters = findViewById(R.id.btnSave);
+        mBtnEncounters.setOnClickListener(this);
 
-        nBtnEncounters.setOnClickListener(this);
+        mBtnArrowOfFinish = findViewById(R.id.btnArrow_top_of_FinishActivity);
+        mBtnArrowOfFinish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Finish.this,TermsOfUse.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
     public void onClick(View v) {
-        if (validation()){
-            Intent intent = new Intent(Finish.this,Filter.class);
+        if (validation()) {
+            Intent intent = new Intent(Finish.this, profile.class);
+            intent.putExtra("data",mEtName.getText().toString());
             startActivity(intent);
         }
     }

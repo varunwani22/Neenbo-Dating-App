@@ -124,6 +124,7 @@
                         android:id="@+id/lisa1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:clickable="true"
                         android:paddingTop="@dimen/dp_10"
                         android:paddingLeft="@dimen/dp_10"
                         android:paddingRight="@dimen/dp_10"
@@ -132,7 +133,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/tvlisa"
+                        android:id="@+id/tvlisaOfLisaActivity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/lisa"
@@ -148,8 +149,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mumbai"
                         android:paddingStart="@dimen/dp_10"
-                        app:layout_constraintStart_toStartOf="@id/tvlisa"
-                        app:layout_constraintTop_toBottomOf="@id/tvlisa"
+                        app:layout_constraintStart_toStartOf="@id/tvlisaOfLisaActivity"
+                        app:layout_constraintTop_toBottomOf="@id/tvlisaOfLisaActivity"
                         android:textSize="@dimen/sp_15"
                         android:textColor="@color/black"
                         />
@@ -157,6 +158,7 @@
                     <ImageView
                         android:id="@+id/julie"
                         android:layout_width="wrap_content"
+                        android:clickable="true"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/dp_10"
                         android:paddingLeft="@dimen/dp_10"
@@ -166,7 +168,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/tvjulie"
+                        android:id="@+id/tvjulieOfjulieActivity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/julie"
@@ -182,8 +184,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mumbai"
                         android:paddingStart="@dimen/dp_10"
-                        app:layout_constraintStart_toStartOf="@id/tvjulie"
-                        app:layout_constraintTop_toBottomOf="@id/tvjulie"
+                        app:layout_constraintStart_toStartOf="@id/tvjulieOfjulieActivity"
+                        app:layout_constraintTop_toBottomOf="@id/tvjulieOfjulieActivity"
                         android:textSize="@dimen/sp_15"
                         android:textColor="@color/black"
                         />
@@ -200,6 +202,7 @@
                     <ImageView
                         android:id="@+id/selena"
                         android:layout_width="wrap_content"
+                        android:clickable="true"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/dp_10"
                         android:paddingLeft="@dimen/dp_10"
@@ -209,7 +212,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/tvselena"
+                        android:id="@+id/tvselenaOfSelenaActivity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/selena"
@@ -225,14 +228,15 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mumbai"
                         android:paddingStart="@dimen/dp_10"
-                        app:layout_constraintStart_toStartOf="@id/tvselena"
-                        app:layout_constraintTop_toBottomOf="@id/tvselena"
+                        app:layout_constraintStart_toStartOf="@id/tvselenaOfSelenaActivity"
+                        app:layout_constraintTop_toBottomOf="@id/tvselenaOfSelenaActivity"
                         android:textSize="@dimen/sp_15"
                         android:textColor="@color/black"
                         />
 
                     <ImageView
                         android:id="@+id/salman"
+                        android:clickable="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/dp_10"

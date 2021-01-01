@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Neenbo_Project">
-        <activity android:name=".MyAcount">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".salman"></activity>
+        <activity android:name=".selena" />
+        <activity android:name=".julie" />
+        <activity android:name=".lisa" />
+        <activity android:name=".MyAcount"/>
+        <activity android:name=".PeopleNearby">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".PeopleNearby" />
         <activity android:name=".profile" />
         <activity android:name=".TermsOfUse" />
         <activity android:name=".Filter" />
         <activity android:name=".Finish" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
 
         </activity>
     </application>

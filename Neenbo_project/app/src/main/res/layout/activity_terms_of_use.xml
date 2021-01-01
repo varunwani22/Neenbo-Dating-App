@@ -23,17 +23,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-   <TextView
-       android:id="@+id/tvTermsOfUseOfTermsOfUseActivity"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:gravity="center"
-       android:text="@string/Text_Terms_Of_Use"
-       android:textSize="@dimen/sp_15"
-       android:textStyle="bold"
-       android:textColor="@color/black"
-       app:layout_constraintTop_toTopOf="@id/btnIAcceptTerms"
-       app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/tvTermsOfUseOfTermsOfUseActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Text_Terms_Of_Use"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnIAcceptTerms" />
 
     <TextView
         android:layout_width="@dimen/dp_80"
@@ -49,8 +49,8 @@
         android:layout_height="wrap_content"
         android:text="@string/Text_privacy_policy"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTermsOfUseOfTermsOfUseActivity" />
@@ -65,16 +65,29 @@
         app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicyOfTermsOfUseActivity" />
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_500"
+        android:layout_height="@dimen/dp_400"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="16dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_i_accept_the_terms" />
+            android:text="@string/text_i_accept_terms_for_2nd_Activity" />
 
     </ScrollView>
+
+    <CheckBox
+        android:id="@+id/cbIaccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i accept the terms"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toTopOf="@id/btnIAcceptTerms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        tools:layout_editor_absoluteY="525dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
