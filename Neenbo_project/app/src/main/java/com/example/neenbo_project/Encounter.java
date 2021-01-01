@@ -1,5 +1,6 @@
 package com.example.neenbo_project;
 
+import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -24,6 +25,7 @@ public class Encounter extends AppCompatActivity {
         setContentView(R.layout.activity_encounter);
         bottom_navigation();
         onclick_for_navigation();
+
     }
 
     private void bottom_navigation() {
@@ -54,6 +56,9 @@ public class Encounter extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Encounter.this, MyAcount.class);
+                String name = getIntent().getStringExtra("data");
+                mbtaccount.setText(name);
+                intent.putExtra("name",mbtaccount.getText().toString());
                 startActivity(intent);
             }
         });
@@ -68,6 +73,9 @@ public class Encounter extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Encounter.this, Filter.class);
+                String data = getIntent().getStringExtra("data");
+                mbtfilter.setText(data);
+                intent.putExtra("fromClickFilter",mbtfilter.getText().toString());
                 startActivity(intent);
             }
         });

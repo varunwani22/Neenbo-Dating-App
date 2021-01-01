@@ -13,6 +13,7 @@ public class MyAcount extends AppCompatActivity {
     private TextView mbtlikeyou;
     private TextView mbtlocation;
     private TextView mbtmessage;
+    private TextView mTvUserName;
     private TextView mbtencounter;
     private ImageButton mbtfilter;
     private ImageView mbtProfileAccount;
@@ -22,6 +23,10 @@ public class MyAcount extends AppCompatActivity {
         setContentView(R.layout.activity_my_account);
         bottom_navigation();
         onclick_for_navigation();
+        mTvUserName = findViewById(R.id.tvUserName_MYA);
+
+        String name = getIntent().getStringExtra("name");
+        mTvUserName.setText(name);
     }
     private void bottom_navigation() {
         mbtencounter = findViewById(R.id.click_encounter);

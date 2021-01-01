@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Filter extends AppCompatActivity implements View.OnClickListener {
+public class Filter extends AppCompatActivity {
 
     private EditText mEtManOrWomen;
     private EditText mEtCityAndState;
@@ -31,7 +31,16 @@ public class Filter extends AppCompatActivity implements View.OnClickListener {
         mBtnSave = findViewById(R.id.btnSave);
         mBtnArrowOfFilter = findViewById(R.id.btnBackArrow_Of_FilterActivity);
 
-        mBtnSave.setOnClickListener(this);
+        mBtnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentFilter = new Intent(Filter.this, profile.class);
+                String nameFilter = getIntent().getStringExtra("fromClickFilter");
+                mBtnSave.setText(nameFilter);
+                intentFilter.putExtra("nameSave", mBtnSave.getText().toString());
+                startActivity(intentFilter);
+            }
+        });
 
         mBtnArrowOfFilter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,9 +50,4 @@ public class Filter extends AppCompatActivity implements View.OnClickListener {
         });
     }
 
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(Filter.this, profile.class);
-        startActivity(intent);
-    }
 }

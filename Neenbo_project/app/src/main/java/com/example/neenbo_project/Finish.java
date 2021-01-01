@@ -7,37 +7,34 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Finish extends AppCompatActivity implements View.OnClickListener {
 
     private EditText mEtEmail;
     private EditText mEtName;
-    private EditText mEtGender;
-    private EditText mEtDay;
-    private EditText mEtMonth;
-    private EditText mEtYear;
-    private Button nBtnEncounters;
+    private Button mBtnEncounters;
+    private TextView mTvBackFinish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finish);
-
         initializeViewAndListeners();
     }
 
     private void initializeViewAndListeners() {
-        mEtEmail = findViewById(R.id.etManOrWomen);
-        mEtName = findViewById(R.id.etCityAndState);
-        mEtDay = findViewById(R.id.et18);
-        mEtMonth = findViewById(R.id.etTo);
-        mEtYear = findViewById(R.id.et35);
-        nBtnEncounters = findViewById(R.id.btnSave);
+        mEtEmail = findViewById(R.id.etEnterYourEmail);
+        mEtName = findViewById(R.id.etName);
+        mBtnEncounters = findViewById(R.id.btnEncounterOfFinish);
+        mTvBackFinish = findViewById(R.id.tvBackFinish);
 
-        nBtnEncounters.setOnClickListener(new View.OnClickListener() {
+        mBtnEncounters.setOnClickListener(this);
+
+        mTvBackFinish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Finish.this,Encounter.class);
+                Intent intent = new Intent(Finish.this,TermsOfUse.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +43,7 @@ public class Finish extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (validation()) {
-            Intent intent = new Intent(Finish.this, profile.class);
+            Intent intent = new Intent(Finish.this,Encounter.class);
             intent.putExtra("data",mEtName.getText().toString());
             startActivity(intent);
         }

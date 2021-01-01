@@ -26,6 +26,8 @@
             android:textSize="@dimen/sp_20" />
 
         <TextView
+            android:id="@+id/tvBackFinish"
+            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_arrow_back"
@@ -46,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardViewFinish" />
 
     <EditText
-        android:id="@+id/etManOrWomen"
+        android:id="@+id/etEnterYourEmail"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_40"
         android:layout_marginStart="@dimen/dp_20"
@@ -66,10 +68,10 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etManOrWomen" />
+        app:layout_constraintTop_toBottomOf="@id/etEnterYourEmail" />
 
     <EditText
-        android:id="@+id/etCityAndState"
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_40"
         android:layout_marginStart="@dimen/dp_20"
@@ -90,7 +92,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etCityAndState" />
+        app:layout_constraintTop_toBottomOf="@id/etName" />
 
     <EditText
         android:id="@+id/etRadius"
@@ -167,7 +169,7 @@
 
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnEncounterOfFinish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_20"

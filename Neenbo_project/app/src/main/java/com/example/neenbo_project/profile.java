@@ -26,18 +26,17 @@ public class profile extends AppCompatActivity {
         mBtnBackArrowOfProfileActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(profile.this,Finish.class);
+                Intent intent = new Intent(profile.this, Filter.class);
                 startActivity(intent);
             }
         });
     }
 
     private void getDataFromIntent() {
-        if (getIntent()!= null && getIntent().getExtras()!= null){
-            String data = getIntent().getStringExtra("data");
-            mTvUsernameAtTopOfProfileActivity.setText(data);
-            mTvUserNameBelowImageOfProfileActivity.setText(data);
-        }
+        String nameProfile = getIntent().getStringExtra("nameSave");
+        mTvUsernameAtTopOfProfileActivity.setText(nameProfile);
+        mTvUserNameBelowImageOfProfileActivity.setText(nameProfile);
+
     }
 
     private void initializeViews() {
