@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsOfUse">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/dp_30"
+            android:text="@string/termConditionTop"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_margin="@dimen/dp_20"
+            android:background="@drawable/ic_threedots" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnIAcceptTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:background="@drawable/accept_rectangle_bg"
+        android:paddingStart="@dimen/dp_50"
+        android:paddingEnd="@dimen/dp_50"
+        android:text="@string/text_i_accept_the_terms"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   <TextView
+       android:id="@+id/tvTermsOfUseOfTermsOfUseActivity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="@string/Text_Terms_Of_Use"
+       android:textSize="@dimen/sp_15"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       app:layout_constraintTop_toTopOf="@id/btnIAcceptTerms"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="2dp"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTermsOfUseOfTermsOfUseActivity" />
+
+    <TextView
+        android:id="@+id/tvPrivacyPolicyOfTermsOfUseActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Text_privacy_policy"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTermsOfUseOfTermsOfUseActivity" />
+
+    <TextView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicyOfTermsOfUseActivity" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="473dp"
+        android:background="@drawable/boxterm_condition"
+        app:layout_constraintBottom_toTopOf="@id/btnIAcceptTerms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:padding="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/termAndCondition" />
+
+    </ScrollView>
+
+    <CheckBox
+        android:layout_marginStart="@dimen/dp_20"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/i_have_read"
+        app:layout_constraintBottom_toTopOf="@+id/btnIAcceptTerms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
